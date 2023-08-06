@@ -24,6 +24,7 @@ class Cform extends Component {
   render() {
     return (
      <>
+     <h3>Class wala:::{JSON.stringify(this.state)}</h3>
      <div className="container   d-flex justify-content-center align-item-center mt-5 rounded">
         <form onSubmit={this.submitHand}>
           <label >UserName</label>
@@ -48,7 +49,7 @@ class Cform extends Component {
             checked={this.state.check} onChange={this.cboxHandl}
           />Accept <a href='google.com'>T&C</a>
           <br />
-          <input type="submit"  className='ml-2 mt-5 mb-3' disabled={this.state.disble} />
+          <input type="submit"  className='ml-2 mt-5 mb-3 ' disabled={this.state.disble} />
         </form>
       </div>
      </>

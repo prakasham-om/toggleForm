@@ -57,7 +57,7 @@ let submitHand=(event)=>{
   }
   return (
     <>
-    <h1>Functun Wala</h1>
+    <h3>Function Wala</h3>
     <div className="container   d-flex justify-content-center align-item-center mt-5 rounded">
         <form onSubmit={submitHand}>
           <label >UserName</label>
@@ -85,7 +85,7 @@ let submitHand=(event)=>{
         </form>
        
       </div>
-      <h1>{JSON.stringify(info)}</h1>
+      <h4>{JSON.stringify(info)}</h4>
     </>
   )
 }
