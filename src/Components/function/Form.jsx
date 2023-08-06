@@ -83,8 +83,9 @@ let submitHand=(event)=>{
           <br />
           <input type="submit"  className='ml-2 mt-5 mb-3' disabled={disble} />
         </form>
-        <h1>{JSON.stringify(info)}</h1>
+       
       </div>
+      <h1>{JSON.stringify(info)}</h1>
     </>
   )
 }
