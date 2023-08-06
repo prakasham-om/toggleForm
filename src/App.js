@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Cform from './Components/class/Cform'
+import Form from './Components/function/Form';
+import {Link,Route,Routes,BrowserRouter as Router} from 'react-router-dom'
 
-function App() {
+function App(){
+
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+      <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div className="navbar-brand">Form with Toggle</div>
+        <div className="ml-auto">
+          <ul className='navbar-nav'>
+            <li><Link className='nav-link' to='/function'>Function</Link></li>
+            <li><Link className='nav-link' to='/class'>Class</Link></li>
+          </ul>
+        </div>
+      </nav>
+      <Routes>
+        <Route path='/function' element={<Form/>} />
+        <Route path='/class' element={<Cform/>} />
+      </Routes>
+    </Router>
+    </>
+    
   );
 }
 

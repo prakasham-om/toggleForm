@@ -1,0 +1,24 @@
+
+.container{
+    background-color: rgb(218, 225, 232);
+    border: 1px slategray;
+
+}
+.passwordfiled{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+span{
+    position: absolute;
+    margin-top: -1px;
+    right: 11px;
+    
+}
+.pass::-ms-reveal,
+.pass::-ms-clear {
+  display: none;
+}
