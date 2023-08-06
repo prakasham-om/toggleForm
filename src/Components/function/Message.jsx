@@ -22,8 +22,10 @@ const Message = () => {
     onChange={handler}
 
   />
-
-    {count >0 ?<p className='text-danger'>Reamaining Charecter: <h5>{250-count}</h5></p> :<p className='text-dark'>Total harecter:<h6>{250}</h6></p>}
+    <div >
+    
+    {count >0 ?<p >Reamaining Charecter: <i className='text-danger'>{250-count}</i>/250</p> :''}
+    </div>
     </div>
     
     
