@@ -22,3 +22,13 @@ span{
 .pass::-ms-clear {
   display: none;
 }
+.containers{
+    display: flex;
+    justify-content: center;
+}
+ .messageBox{
+    width: 600px;
+    height: 400px;
+    border: 1px salid black;
+    
+ }
