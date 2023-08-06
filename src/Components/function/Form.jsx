@@ -3,6 +3,7 @@ import '../App.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faEye, faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 import {useEffect, useState} from 'react'
+import { json } from 'react-router-dom';
 let Form=()=> {
      
  let [info,setInfo]=useState({uname:"",password:"",passvisible:true})
@@ -56,6 +57,7 @@ let submitHand=(event)=>{
   }
   return (
     <>
+    <h1>Functun Wala</h1>
     <div className="container   d-flex justify-content-center align-item-center mt-5 rounded">
         <form onSubmit={submitHand}>
           <label >UserName</label>
@@ -81,6 +83,7 @@ let submitHand=(event)=>{
           <br />
           <input type="submit"  className='ml-2 mt-5 mb-3' disabled={disble} />
         </form>
+        <h1>{JSON.stringify(info)}</h1>
       </div>
     </>
   )
